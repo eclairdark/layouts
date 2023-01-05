@@ -1,0 +1,59 @@
+@import url(./_variables.css);
+
+.header {
+  max-width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 214px;
+}
+
+.navigation-list {
+  display: flex;
+  line-height: 18.9px;
+  gap: 50px;
+}
+
+.logo {
+  fill: var(--main-font-color);
+  width: 60px;
+  height: 60px;
+  transition: fill 0.2s linear;
+}
+
+.logo:hover {
+  fill: #018abe;
+  transition: fill 0.2s linear;
+}
+
+.session-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.2px;
+  border-radius: 3px;
+  background: #018abe;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.active {
+  color: #018abe;
+}
+
+.list-item__link {
+  transition: color 0.1s ease;
+}
+
+.list-item__link:hover {
+  color: rgba(1, 138, 190, 0.8);
+  transition: color 0.1s ease;
+}
