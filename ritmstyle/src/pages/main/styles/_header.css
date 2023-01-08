@@ -1,7 +1,7 @@
 @import url(./_variables.css);
 
 .header {
-  max-width: 100%;
+  max-width: 1298px;
 }
 
 .header__wrapper {
@@ -19,6 +19,7 @@
 
 .logo {
   fill: var(--main-font-color);
+  display: block;
   width: 60px;
   height: 60px;
   transition: fill 0.2s linear;
@@ -29,7 +30,8 @@
   transition: fill 0.2s linear;
 }
 
-.session-button {
+.session-button,
+.navigation-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +47,13 @@
   cursor: pointer;
 }
 
+.navigation-button {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 .active {
   color: #018abe;
 }
@@ -56,4 +65,132 @@
 .list-item__link:hover {
   color: rgba(1, 138, 190, 0.8);
   transition: color 0.1s ease;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3rem;
+  gap: 0.2rem;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.burger-menu__line {
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background: #fff;
+  border-radius: 0.2rem;
+  transition: 0.1s linear;
+}
+
+.burger-menu:hover .burger-menu__line {
+  background: rgba(1, 138, 190, 1);
+  transition: 0.1s linear;
+}
+
+.burger-menu.active .line-middle {
+  opacity: 0;
+}
+.burger-menu.active .line-top {
+  transform: translate(0, 8px) rotate(45deg);
+}
+.burger-menu.active .line-bottom {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (min-width: 1000px) and (max-width: 1420px) {
+  .header {
+    min-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__wrapper {
+    gap: 100px;
+  }
+
+  .navigation-list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .header {
+    min-width: 769px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__wrapper {
+    gap: 40px;
+  }
+
+  .navigation-list {
+    gap: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --main-padding: 10px 0;
+  }
+
+  .header {
+    min-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__wrapper {
+    min-width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .burger-menu {
+    position: relative;
+    display: flex;
+    z-index: 12;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 13;
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation-list {
+    display: flex;
+  }
+
+  .session-button {
+    display: none;
+  }
+
+  .header__navigation {
+    position: fixed;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 6rem 1rem;
+    background: #000000;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: 0.3s all linear;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 3rem;
+  }
 }
