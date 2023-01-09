@@ -33,6 +33,25 @@
   text-align: center;
 }
 
+.big-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.blue {
+  fill: #018abe;
+}
+
+.big-subtitle__text {
+  font-family: 'El Messiri';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 58.5px;
+  text-align: center;
+}
+
 @media (min-width: 1201px) and (max-width: 1420px) {
   .main-title {
     margin: 0;

@@ -1,0 +1,44 @@
+@import url(./fonts.css);
+@import url(./_variables.css);
+
+.sessions__inner-card-big {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 416px;
+  height: 535px;
+  border-radius: 10px;
+  background: url(../../../assets/images/jpg/session-high.jpg) no-repeat center;
+}
+
+.card-text {
+  padding: 0 108px 50px 50px;
+  font-family: 'El Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 410px;
+  height: 255px;
+  border-radius: 10px;
+  background: url(../../../assets/images/jpg/session-short.jpg) no-repeat center;
+}
+
+.short {
+  padding: 0 40px 30px 40px;
+}
+
+@media (min-width: 1201px) and (max-width: 1420px) {
+  .card {
+    width: 365px;
+  }
+
+  .sessions__inner-card-big {
+    width: 400px;
+  }
+}

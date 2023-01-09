@@ -3,6 +3,7 @@
 @import url(./_variables.css);
 @import url(./_header.css);
 @import url(./_titles.css);
+@import url(./_sessions-cards.css);
 
 * {
   margin: 0;
@@ -46,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 30px auto;
 }
 
@@ -60,6 +62,29 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-bottom: 150px;
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+}
+
+.sessions__inner {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 24px;
+}
+
+.cards-list {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 @media (min-width: 1201px) and (max-width: 1420px) {
@@ -67,6 +92,19 @@ body {
     min-width: 1180px;
     height: 500px;
     gap: 40px;
+  }
+
+  .sessions {
+    min-width: 1180px;
+  }
+
+  .cards-list {
+    width: 800px;
+  }
+
+  .sessions__inner {
+    gap: 2px;
+    padding-left: 10px;
   }
 }
 
