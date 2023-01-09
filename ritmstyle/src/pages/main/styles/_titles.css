@@ -1,0 +1,82 @@
+@import url(./fonts.css);
+@import url(./_variables.css);
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+}
+
+.subtitle-text {
+  font-family: 'El Messiri';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+.rectangle-l,
+.rectangle-r {
+  display: block;
+  width: 28px;
+  height: 14px;
+  fill: #ffffff;
+}
+
+.main-title {
+  font-family: 'El Messiri';
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 89.6px;
+  text-align: center;
+}
+
+@media (min-width: 1201px) and (max-width: 1420px) {
+  .main-title {
+    margin: 0;
+  }
+
+  .subtitle {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .main-title {
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .main-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .subtitle {
+    gap: 30px;
+  }
+
+  .subtitle-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  .main-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    gap: 20px;
+  }
+
+  .subtitle-text {
+    font-size: 20px;
+  }
+}
