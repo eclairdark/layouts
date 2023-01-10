@@ -76,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   padding-left: 30px;
-  gap: 24px;
+  gap: 10px;
 }
 
 .cards-list {
@@ -113,6 +113,14 @@ body {
     min-width: 960px;
     height: 400px;
   }
+
+  .sessions {
+    min-width: 960px;
+  }
+
+  .cards-list {
+    width: 550px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1000px) {
@@ -120,6 +128,23 @@ body {
     min-width: 740px;
     height: 300px;
     gap: 20px;
+  }
+
+  .sessions {
+    min-width: 740px;
+    gap: 50px;
+  }
+
+  .cards-list {
+    width: 740px;
+  }
+
+  .sessions__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
   }
 }
 
@@ -129,5 +154,22 @@ body {
     height: 140px;
     background-image: none;
     gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sessions__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .sessions {
+    gap: 30px;
+  }
+
+  .cards-list {
+    width: 320px;
   }
 }

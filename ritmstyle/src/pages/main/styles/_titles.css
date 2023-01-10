@@ -91,6 +91,11 @@
     line-height: 40px;
   }
 
+  .big-subtitle__text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
   .subtitle {
     gap: 20px;
   }

@@ -42,3 +42,53 @@
     width: 400px;
   }
 }
+
+@media (min-width: 1001px) and (max-width: 1201px) {
+  .card {
+    width: 240px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    line-height: 23.6px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .card {
+    width: 340px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    line-height: 23.6px;
+  }
+
+  .sessions__inner-card-big {
+    height: 255px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  .card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .sessions__inner-card-big {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../../../assets/images/jpg/session-short.jpg) no-repeat
+      center;
+  }
+
+  .card-text {
+    font-size: 15px;
+    line-height: 23.6px;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 400;
+  }
+}
