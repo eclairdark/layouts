@@ -1,0 +1,98 @@
+@import url(./_variables.css);
+@import url(./fonts.css);
+
+.price__content {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  gap: 134px;
+}
+
+.price__img {
+  border-radius: 13px;
+}
+
+.price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  width: 416px;
+}
+
+.price__desc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price__svg {
+  width: 18px;
+  height: 8px;
+}
+
+.price__title {
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: right;
+}
+
+.price__cost {
+  font-family: 'El Messiri';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.price__foto {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.foto__text {
+  font-family: 'El Messiri';
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29.4px;
+  text-align: center;
+}
+
+@media (min-width: 560px) and (max-width: 1140px) {
+  .price__content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 560px) {
+  .price__content {
+    padding-top: 50px;
+    flex-direction: column;
+    padding: 50px 10px;
+    gap: 50px;
+  }
+
+  .price__list {
+    width: 300px;
+  }
+
+  .price__img {
+    width: 300px;
+  }
+
+  .price__title {
+    font-size: 15px;
+  }
+
+  .price__bit-title {
+    gap: 30px;
+  }
+}

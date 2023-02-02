@@ -91,13 +91,13 @@
   transition: 0.1s linear;
 }
 
-.burger-menu.active .line-middle {
+.burger-menu.active-nav .line-middle {
   opacity: 0;
 }
-.burger-menu.active .line-top {
+.burger-menu.active-nav .line-top {
   transform: translate(0, 8px) rotate(45deg);
 }
-.burger-menu.active .line-bottom {
+.burger-menu.active-nav .line-bottom {
   transform: translate(0, -8px) rotate(-45deg);
 }
 

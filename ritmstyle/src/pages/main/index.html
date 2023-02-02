@@ -22,10 +22,10 @@
 				<ul class="navigation-list">
 					<li class="list-item"><a href="#aquatherapy" class="list-item__link">Главная</a></li>
 					<li class="list-item"><a href="#sessions" class="list-item__link">Сеансы</a></li>
-					<li class="list-item"><a href="#" class="list-item__link">Отзывы</a></li>
+					<li class="list-item"><a href="#reviews" class="list-item__link">Отзывы</a></li>
 					<li class="list-item"><a href="#" class="list-item__link">Контакты</a></li>
 					<li class="list-item"><a href="../news/index.html" class="list-item__link">Новости</a></li>
-					<li class="list-item"><a href="#" class="list-item__link">Обо мне</a></li>
+					<li class="list-item"><a href="#about" class="list-item__link">Обо мне</a></li>
 					<li class="list-item"><a href="../blog/index.html" class="list-item__link">Блог</a></li>
 				</ul>
 				<button class="navigation-button">Записаться на сеанс</button>
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="big-subtitle">
 				<svg class="rectangle-l blue">
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
@@ -94,8 +94,80 @@
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-r"></use>
 				</svg>
 			</div>
+			<div class="reviews-container">
+				<div class="slider-container">
+					<div class="slider">
+						<div class="slider__line">
+							<div class="slide first">
+								<h4 class="slide__title">Кира Иванова</h4>
+								<p class="slide__desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi
+									orci
+									gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh
+									donec
+									sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+								</p>
+								<p class="slide__desc">
+									Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus
+									orci.
+									Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum
+									at
+									elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam,
+									urna,
+									sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+								</p>
+							</div>
+							<div class="slide second active">
+								<h4 class="slide__title active-title">Александра Дмитриева</h4>
+								<p class="slide__desc active-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi
+									orci
+									gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh
+									donec
+									sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+								</p>
+								<p class="slide__desc active-desc">
+									Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus
+									orci.
+									Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum
+									at
+									elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam,
+									urna,
+									sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+								</p>
+							</div>
+							<div class="slide third">
+								<h4 class="slide__title">Яна Жернова</h4>
+								<p class="slide__desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi nulla dictum. Urna mi
+									orci
+									gravida placerat amet, eu, aliquet facilisis aliquet. Dolor praesent nam ornare fringilla enim nibh
+									donec
+									sit imperdiet. Amet, diam duis eu sit et. Volutpat vestibulum a lectus sed blandit.
+								</p>
+								<p class="slide__desc">
+									Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque vestibulum phasellus
+									orci.
+									Fermentum sed phasellus aliquam nulla non aenean. Quisque id nunc, mauris potenti a massa. Fermentum
+									at
+									elit, convallis leo dolor aliquet id elementum. Ullamcorper sociis et cum bibendum in egestas. Diam,
+									urna,
+									sed tempus mollis aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__dots">
+						<span class="slider__dot first-dot"></span>
+						<span class="slider__dot second-dot active-dot"></span>
+						<span class="slider__dot third-dot"></span>
+					</div>
+
+				</div>
+			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="big-subtitle">
 				<svg class="rectangle-l blue">
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
@@ -105,9 +177,45 @@
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-r"></use>
 				</svg>
 			</div>
+			<div class="about__cards">
+				<div class="about__card">
+					<div class="card__text">
+						<h4 class="card__title">RitmStyle массаж</h4>
+						<p class="card__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus
+							eget mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet amet. Diam
+							nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+						</p>
+						<p class="card__desc">
+							Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet diam, non
+							augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor at tempor.
+						</p>
+					</div>
+					<img src="../../assets/images/jpg/session-dark.jpg" class="card__img" alt="session-dark">
+				</div>
+				<div class="about__card">
+					<img src="../../assets/images/jpg/session-dark.jpg" class="card__img second-img" alt="session-dark">
+					<div class="card__text">
+						<h4 class="card__title">RitmStyle гидротерапия</h4>
+						<p class="card__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra turpis eget.
+							Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque etiam. Eros arcu, pulvinar
+							penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam tincidunt dui viverra. Eget quis ultricies
+							sem nunc risus senectus luctus ultricies. Enim feugiat pharetra pharetra et.
+						</p>
+						<p class="card__desc">
+							Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum nisi id sed
+							tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel massa tincidunt. Hendrerit
+							blandit in augue vel mi quam magna egestas. Fringilla ac lacus viverra ullamcorper leo, enim vitae id
+							aliquam. Magna sed tristique tellus enim, netus tempor at elit dui. Ullamcorper hendrerit feugiat libero
+							tellus diam egestas dui tellus odio.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="price">
-			<div class="big-subtitle">
+			<div class="big-subtitle price__bit-title">
 				<svg class="rectangle-l blue">
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
 				</svg>
@@ -115,6 +223,59 @@
 				<svg class="rectangle-r blue">
 					<use xlink:href="../../assets/icons/sprite.svg#rectangle-r"></use>
 				</svg>
+			</div>
+			<div class="price__content">
+				<div class="price__list">
+					<div class="price__item">
+						<div class="price__desc">
+							<svg class="rectangle-l blue price__svg">
+								<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
+							</svg>
+							<h5 class="price__title">RitmStyle с погружением</h5>
+						</div>
+						<div class="price__cost">1000р.</div>
+					</div>
+					<div class="price__item">
+						<div class="price__desc">
+							<svg class="rectangle-l blue price__svg">
+								<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
+							</svg>
+							<h5 class="price__title">Абонемент на RitmStyle</h5>
+						</div>
+						<div class="price__cost">5500р.</div>
+					</div>
+					<div class="price__item">
+						<div class="price__desc">
+							<svg class="rectangle-l blue price__svg">
+								<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
+							</svg>
+							<h5 class="price__title">RitmStyle для пар</h5>
+						</div>
+						<div class="price__cost">6000р.</div>
+					</div>
+					<div class="price__item">
+						<div class="price__desc">
+							<svg class="rectangle-l blue price__svg">
+								<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
+							</svg>
+							<h5 class="price__title">RitmStyle для беременных</h5>
+						</div>
+						<div class="price__cost">13500р.</div>
+					</div>
+					<div class="price__item">
+						<div class="price__desc">
+							<svg class="rectangle-l blue price__svg">
+								<use xlink:href="../../assets/icons/sprite.svg#rectangle-l"></use>
+							</svg>
+							<h5 class="price__title">RitmStyle + фотосессия</h5>
+						</div>
+						<div class="price__cost">11500р.</div>
+					</div>
+				</div>
+				<div class="price__foto">
+					<img src="../../assets/images/jpg/certificate.jpg" class="price__img" alt="certificate">
+					<h4 class="foto__text">Подарочный сертификат</h4>
+				</div>
 			</div>
 		</section>
 		<section class="contacts"></section>
