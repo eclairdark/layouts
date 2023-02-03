@@ -1,7 +1,7 @@
 @import url(../../main/styles/normalize.css);
-@import url(../../main/styles/_variables.css);
+@import url(../../main/styles/variables.css);
 @import url(../../main/styles/fonts.css);
-@import url(../../main/styles/_header.css);
+@import url(../../main/styles/header.css);
 
 * {
   margin: 0;
