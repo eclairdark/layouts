@@ -16,7 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', () => {
     burger.classList.toggle('active-nav');
 
+    if (burger.classList.contains('active-nav')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
     openNavigation(burger);
+  });
+
+  function closeMenu() {
+    const navigation = document.querySelector('.header__navigation');
+
+    navigation.removeAttribute('style');
+    burger.classList.remove('active-nav');
+    document.body.style.overflow = '';
+  }
+
+  const navigationList = document.querySelectorAll('.navigation-list');
+  navigationList.forEach((i) => {
+    i.addEventListener('click', closeMenu);
   });
 
   //slider
