@@ -1,0 +1,26 @@
+@import url(./_variables.css);
+@import url(./fonts.css);
+
+.footer {
+  margin: 30px auto;
+  min-width: 1296px;
+}
+
+.footer__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  .footer {
+    min-width: 856px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .footer {
+    padding: 0 20px;
+    min-width: 100%;
+  }
+}

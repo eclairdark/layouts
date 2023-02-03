@@ -8,6 +8,7 @@
 @import url(./_about-section.css);
 @import url(./_price-section.css);
 @import url(./_contacts-section.css);
+@import url(./_footer.css);
 
 * {
   margin: 0;
