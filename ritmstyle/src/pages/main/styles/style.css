@@ -1,14 +1,14 @@
 @import url(./normalize.css);
 @import url(./fonts.css);
-@import url(./_variables.css);
-@import url(./_header.css);
-@import url(./_titles.css);
-@import url(./_sessions-cards.css);
-@import url(./_slider.css);
-@import url(./_about-section.css);
-@import url(./_price-section.css);
-@import url(./_contacts-section.css);
-@import url(./_footer.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./titles.css);
+@import url(./sessions-cards.css);
+@import url(./slider.css);
+@import url(./about-section.css);
+@import url(./price-section.css);
+@import url(./contacts-section.css);
+@import url(./footer.css);
 
 * {
   margin: 0;
