@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menu.classList.contains('active-nav')) {
       navigation.style.transform = 'translateX(0)';
       navigationButton.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     } else {
       navigation.removeAttribute('style');
       navigationButton.removeAttribute('style');
+      document.body.style.overflow = '';
     }
   }
 
@@ -18,6 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openNavigation(burger);
   });
+
+  const menuLinks = document.querySelectorAll('.navigation-list');
+  console.log(menuLinks);
+
+  menuLinks.forEach((i) => i.addEventListener('click', closeMenu));
+
+  function closeMenu() {
+    const navigation = document.querySelector('.header__navigation');
+
+    navigation.removeAttribute('style');
+    burger.classList.remove('active-nav');
+    document.body.style.overflow = '';
+  }
 
   //slider
 
